@@ -1,0 +1,8 @@
+.my-component{
+    min-height: 20vh;
+    background: var(--color-accent);
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: .4rem;
+    height: fit-content;
+}

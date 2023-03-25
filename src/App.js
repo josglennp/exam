@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { MyComponent } from "./Questions/first/MyComponent";
+import TodoContextProvider from "./Questions/second/store";
+import TodoList from "./Questions/second/TodoList";
+import DataManipulation from "./Questions/third/DataManipulation";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <MyComponent headerText={"Answer: "}>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I changed The component into Functional Component with react hooks.
+          also I made the The "My Component" clickable since there are no
+          buttons to click to trigger how many clicks are there.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </MyComponent>
+      <TodoContextProvider>
+        <TodoList />
+      </TodoContextProvider>
+      <DataManipulation />
     </div>
   );
 }
