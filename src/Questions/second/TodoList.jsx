@@ -19,7 +19,9 @@ const TodoList = () => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button onClick={() => submit()}>Add todo</button>
+      <button onClick={() => submit()} disabled={text === "" ? true : false}>
+        Add todo
+      </button>
       <ul>
         {todoCtx.todo.map((item) => (
           <li>
@@ -38,7 +40,7 @@ const TodoList = () => {
       <h3>My Answer:</h3>
       <span>
         I create a new file for storing the logic for getting the data in
-        todolist and I used useContext and useReducer for state and actions
+        todolist and I used useContext and useReducer for state and actions.
       </span>
     </div>
   );
