@@ -6,3 +6,25 @@
     border-radius: .4rem;
     height: fit-content;
 }
+
+@media screen and (max-width: 1024px) {
+    .my-component {
+        margin: 3rem;
+    }
+  }
+  
+  /* ============= Media queries (Mobile) ======================= */
+  
+  @media screen and (max-width: 600px) {
+    .my-component {
+      margin: 2rem;
+    }
+  }
+  
+  /* ============= Media queries (Mobile) ======================= */
+  
+  @media screen and (max-width: 390px) {
+    .my-component {
+      margin: 1rem;
+    }
+}
